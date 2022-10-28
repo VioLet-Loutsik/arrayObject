@@ -52,8 +52,18 @@ let cars = [
   },
 ];
 console.log(cars[0].model);
+
+
 // конкатенация массивов
-let numbSec = [12, 3, 23, 54];
+let numbers = [12, 3, 23, 54];
+let numbersSec = [125, 5, 25, 55];
+let result = []
+result = result.concat(numbers)
+result = result.concat(numbersSec)
+console.log(result);
+
+let resultSec = [...numbers, ...numbersSec]
+console.log(resultSec);
 
 //    --------  HOMEWORK ------------
 
@@ -70,12 +80,13 @@ console.log(arr.at(-1));
 // --------- 2 --------
 // Используйте метод push чтобы добавить «Qiwi» в fruits массив.
 const fruits = ["Banana", "Orange", "Apple"];
-const fruit_second = fruits.push("Qiwi");
-console.log(fruits);
+const fruit_second = fruits.push("Qiwi"); 
+console.log(fruits
+  );
 
 // --------- 3 --------
 
-myCountry = {
+myCountry = {  
   continent: "Asia",
   country: "Japan",
 };
@@ -84,7 +95,7 @@ console.log(myCountry.country);
 
 // --------- 4 --------
 // Добавьте к объекту person ключ и значение: country: Norway.
-const person = {
+const person = {      
   firstName: "Jony",
   lastName: "Bush",
   // _______:________
@@ -94,12 +105,11 @@ console.log(person);
 
 // --------- 5 --------
 
-// Заполните поля чтобы получить в console.log ('Jony is 20')
+// Заполните поля чтобы получить в console.log ('Jony is 50')
 const pers = {
   name: "John",
   age: 50
 };
-pers.age = 20;
 console.log(pers.name + " is " + pers.age);
 
 // --------- 6 --------
@@ -118,9 +128,9 @@ let str2 = "World!";
 // Преобразуйте текст в верхнем регистре:
 
 let txt_sec = "Hello World!";
-txt_sec = txt_sec.toUpperCase;  // ЗАЧЕМ ЭТА СТРОКА?????????
+let txt_th = txt_sec.toUpperCase();  
 
-console.log(txt.toUpperCase())  
+console.log(txt_th)  
 
 // --------- 9 --------
 
